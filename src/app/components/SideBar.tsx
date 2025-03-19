@@ -1,4 +1,4 @@
-export default function SideBar({isOpen, setIsOpen}: {isOpen: boolean, setIsOpen: any}) {
+export default function SideBar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
     
     return (
         <div className="fixed h-screen py-5 bg-[#1E1E1E] mt-0">
@@ -84,7 +84,7 @@ export default function SideBar({isOpen, setIsOpen}: {isOpen: boolean, setIsOpen
                             </svg>
 
                         </div>
-                        <div>
+                        <div className="shrink min-h-0">
                             <svg width="20" height="573" viewBox="0 0 20 573" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.8127 69.9329H17.6346V63.4017C17.6346 62.7188 17.0705 62.1251 16.358 62.1251H14.7549C14.0721 62.1251 13.4783 62.6892 13.4783 63.4017V69.9329H11.5783V66.2813C11.5783 65.5985 11.0143 65.0048 10.3018 65.0048H8.69863C8.01582 65.0345 7.42207 65.5985 7.42207 66.2813V69.9329H5.49238V58.9782C5.49238 58.2954 4.92832 57.7017 4.21582 57.7017H2.6127C1.92988 57.7017 1.33613 58.2657 1.33613 58.9782V69.9329H1.1877C0.831445 69.9329 0.504883 70.2298 0.504883 70.6157C0.504883 71.0017 0.801758 71.2985 1.1877 71.2985H17.8127C18.1689 71.2985 18.4955 71.0017 18.4955 70.6157C18.4955 70.2298 18.1689 69.9329 17.8127 69.9329ZM2.70176 69.9329V59.0673H4.15645V69.9626H2.70176V69.9329ZM8.75801 69.9329V66.3704H10.2127V69.9626H8.75801V69.9329ZM14.8439 69.9329V63.4907H16.2986V69.9329H14.8439Z" fill="white" />
                                 <g clipPath="url(#clip0_311_979)">

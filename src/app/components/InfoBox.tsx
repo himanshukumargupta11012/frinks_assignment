@@ -1,4 +1,6 @@
-export default function InfoBox({data}: {data: any}) {
+import { JSX } from "react";
+
+export default function InfoBox({data}: {data: {icon: JSX.Element, count: number, type: string}}) {
     return (
         <div className="flex border-[.75px] rounded-[4.75px] p-1 border-[#C4C4C4] gap-x-2 w-[220px]">
             <div className="rounded-full bg-[#F1F2F4] aspect-square p-1 flex justify-center items-center w-[40px]">

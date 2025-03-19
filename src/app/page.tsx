@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import Campaign from "./components/Campaign";
 import InfoBox from "./components/InfoBox";
 import SideBar from "./components/SideBar";
@@ -83,7 +82,7 @@ export default function Home() {
     }
 ]
   const notification_count = 2
-  const col_width = ["1/8", "1/8", "1/16", "1/8", "1/8", "1/16", "1/16", "1/16", "1/8"]
+  const col_width = ["1/8", "1/8", "1/16", "1/8", "1/8", "[80px]", "1/16", "1/16", "[150px]"]
   const sort_options = ["Target Industry", "Type", "Target Geography", "Status", "Owner"]
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -217,7 +216,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-lg font-light text-[#696D76] mb-1">
-          Here's where you'll view a summary of Test's status, priorities, workload, and more.
+          Here&apos;s where you&apos;ll view a summary of Test&apos;s status, priorities, workload, and more.
         </div>
         <div className="flex gap-x-4 mb-1">
           {info_box_data.map((data, index) =>
@@ -228,7 +227,7 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row justify-between mb-3 items-end gap-y-1">
           <div className="flex gap-x-4 w-full xl:w-fit">
             {sort_options.map((option, index) => 
-            <div className="flex items-center gap-x-1">
+            <div className="flex items-center gap-x-1" key={index}>
               <div className="text-[#4F4F4F] text-[14px]">
                 {option}
               </div>
