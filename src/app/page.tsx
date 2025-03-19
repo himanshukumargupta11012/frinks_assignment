@@ -3,8 +3,6 @@ import Campaign from "./components/Campaign";
 import InfoBox from "./components/InfoBox";
 import SideBar from "./components/SideBar";
 import { useState } from "react";
-import classNames from "classnames";
-
 
 export default function Home() {
 
@@ -286,7 +284,7 @@ export default function Home() {
         </div>
 
         <div className="flex bg-[#ff6934] text-white px-7 py-2 gap-8 text-center">
-          <div className={classNames(`w-${col_width[0]}`)}>Campaign Name</div>
+          <div className={`w-${col_width[0]}`}>Campaign Name</div>
           <div className={`w-${col_width[1]}`}>Target Industry</div>
           <div className={`w-${col_width[2]}`}>Type</div>
           <div className={`w-${col_width[3]}`}>Target Geography</div>
